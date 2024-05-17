@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/restaurant-landing-page/static/css/main.b671dbc9.css",
+    "main.js": "/restaurant-landing-page/static/js/main.1caa99f3.js",
+    "static/js/453.182ddcf5.chunk.js": "/restaurant-landing-page/static/js/453.182ddcf5.chunk.js",
+    "static/media/mkani-3.jpg": "/restaurant-landing-page/static/media/mkani-3.cc7e1af4d93be2506bda.jpg",
+    "static/media/mkani-2.jpg": "/restaurant-landing-page/static/media/mkani-2.5df878b42add154b0d31.jpg",
+    "static/media/mkani-breakfast.jpg": "/restaurant-landing-page/static/media/mkani-breakfast.50a832603e85ecf91a7c.jpg",
+    "static/media/mkani.jpg": "/restaurant-landing-page/static/media/mkani.6bf63581f0549dc7c670.jpg",
+    "static/media/mkani-coffee.jpg": "/restaurant-landing-page/static/media/mkani-coffee.3f41012e14b97dea54fc.jpg",
+    "static/media/instagram.svg": "/restaurant-landing-page/static/media/instagram.3f10f6ceba067f8e441daa001640eee7.svg",
+    "static/media/style.svg": "/restaurant-landing-page/static/media/style.2af97f8e9897486e3a79402d14b2e7b3.svg",
+    "static/media/mkani logo.svg": "/restaurant-landing-page/static/media/mkani logo.3084b6e1c0b3610ccebcd18554e32bb5.svg",
+    "index.html": "/restaurant-landing-page/index.html",
+    "static/media/X.svg": "/restaurant-landing-page/static/media/X.ce4401df035e42f66069f2d64d5f2d25.svg",
+    "static/media/facebook.svg": "/restaurant-landing-page/static/media/facebook.cf3924ab76eee62304d30570e3d940a6.svg",
+    "main.b671dbc9.css.map": "/restaurant-landing-page/static/css/main.b671dbc9.css.map",
+    "main.1caa99f3.js.map": "/restaurant-landing-page/static/js/main.1caa99f3.js.map",
+    "453.182ddcf5.chunk.js.map": "/restaurant-landing-page/static/js/453.182ddcf5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b671dbc9.css",
+    "static/js/main.1caa99f3.js"
+  ]
+}
