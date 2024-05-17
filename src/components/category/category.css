@@ -1,0 +1,94 @@
+@import url("../../index.css");
+.category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+}
+
+.category .hover-effect {
+    position: fixed;
+    top: 0px;
+    inset-inline-end: 0;
+    width: 30px;
+    transform: rotateZ(45deg);
+    background: radial-gradient(#eee 10%, transparent 100%);
+    transition: 0.5s;
+}
+
+.category:hover .hover-effect {
+    position: fixed;
+    top: 100%;
+    inset-inline-end: 100%;
+    width: 30px;
+    transform: rotateZ(45deg);
+    background: radial-gradient(#eee 10%, transparent 100%);
+}
+
+.category .image-container img {
+    filter: brightness(0.8);
+}
+
+.category h3 {
+    margin: 5px;
+}
+
+.category button {
+    border: none;
+    border-radius: 0;
+    font-family: inherit;
+    font-size: small;
+}
+
+.category button hr {
+    margin: 1px auto;
+    width: 0;
+    transition: 0.3s;
+    border: none;
+}
+
+.category button:hover hr {
+    border: var(--primary-color) solid 1px;
+    width: 100%;
+}
+
+.category .image-container {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    transition: transform 0.5s;
+    z-index: 1;
+}
+
+.category .image-container img {
+    transition: transform 0.5s ease;
+}
+
+.category .image-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, transparent 30%, #eeeeee50 50%, transparent 70%);
+    z-index: 1;
+    transform: translateX(-70%) translateY(-70%);
+}
+
+.category:hover .image-container {
+    transform: scale(1.03);
+}
+
+.category:hover .image-container::before {
+    transition: transform 0.7s ease;
+    transform: translateX(70%) translateY(70%);
+}
+
+.category .style-image {
+    transition: transform 0.5s;
+}
+
+.category:hover .style-image {
+    transform: rotateY(180deg);
+}

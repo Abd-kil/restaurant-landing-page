@@ -1,0 +1,78 @@
+:root{
+  --background-color:#191919;
+  --primary-color: #2e918c;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Tajawal", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  direction: rtl;
+  color: #eee;
+}
+
+body>* {
+  direction: inherit;
+}
+
+::-webkit-scrollbar {
+  padding: 5px;
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 5px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+button,
+input,
+textarea {
+  border: var(--primary-color) solid;
+  border-radius: 5px;
+}
+
+button {
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.hover-style {
+  cursor: pointer;
+  color: inherit;
+  border: var(--primary-color) solid;
+  background: radial-gradient(circle at 50% 0, var(--primary-color) 90%, transparent 91%);
+  background-size: 100% 600%;
+  background-repeat: no-repeat;
+  background-position-y: 120%;
+  transition: background-position 0.2s 0s;
+}
+
+button:hover,
+.hover-style:hover {
+  background-position-y: 80%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}

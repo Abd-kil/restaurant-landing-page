@@ -1,0 +1,48 @@
+.meal {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 310px;
+    width: -webkit-fill-available;
+}
+
+.meal .image-container {
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.meal img {
+    object-fit: cover;
+    transition: transform 0.1s;
+}
+
+.meal:hover img {
+    transform: scale(1.03);
+    filter:contrast(0.75);
+    transition: transform 0.5s;
+}
+
+.meal .text-container {
+    flex: 3;
+}
+
+.meal .text-container h3{
+    display: flex;
+    align-items: center;
+    color: inherit;
+    transition: 0.5s;
+}
+
+.meal:hover .text-container h3{
+    color:#77ccc7;
+}
+
+.meal .text-container h3::after{
+    content: "";
+    display: inline-block;
+    height: 1px;
+    width: 100%;
+    border-bottom: 1.5px solid #2e918c80;
+    border-top: 1.5px solid #2e918c80;
+    margin: auto 10px;
+}

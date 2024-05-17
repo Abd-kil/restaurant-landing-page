@@ -1,0 +1,120 @@
+@import url("../../index.css");
+#navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--background-color);
+    text-shadow: 2px 2px 5px var(--primary-color);
+    z-index: 2;
+    height: 55px;
+    transition: height 0.3s;
+    overflow-y: hidden;
+}
+
+#navigation ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+#navigation a span {
+    background: transparent;
+    padding-bottom: 10px;
+    transition: 0.3s;
+}
+
+#navigation a:hover span,
+#navigation .active span {
+    box-shadow: inset 0px -5px 2px -2px var(--primary-color);
+}
+
+#navigation #humberger {
+    width: 20px;
+    border: none;
+    padding: 0;
+    display: none;
+}
+
+@media (max-width:720px) {
+    #navigation {
+        justify-content: center;
+    }
+
+    #navigation ul {
+        /* display: none; */
+        width: 0;
+        padding: 0;
+        overflow: hidden;
+        flex-direction: column;
+        justify-content: start;
+        align-items: stretch;
+        background: inherit;
+        margin: 0;
+        position: fixed;
+        top: 55px;
+        inset-inline-start: 0;
+        bottom: 0;
+        gap: 20px;
+        transition: width 0.5s;
+    }
+
+    #navigation .open-nav {
+        display: flex;
+        width: 150px;
+        padding: 0 20px;
+    }
+
+    #navigation .open-nav a {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    #navigation .open-nav a div {
+        transition:transform 0.4s, margin 0.2s;
+    }
+
+    #navigation .open-nav a .active-section-style,
+    #navigation .open-nav a:hover div {
+        width: 4px;
+        height: 4px;
+        margin-inline-end: 20px;
+        border: var(--primary-color) solid;
+        transform: rotateZ(45deg);
+    }
+
+    #navigation #humberger {
+        display: block;
+        position: absolute;
+        inset-inline-start: 20px;
+    }
+
+    #navigation #humberger hr {
+        margin-block: 5px;
+        margin-inline: auto 0;
+        transition: 0.2s;
+    }
+
+    #navigation #humberger hr:not(:nth-child(2)) {
+        width: 90%;
+    }
+
+    #navigation #humberger hr:nth-child(2) {
+        width: 70%;
+    }
+
+    #navigation #humberger:hover hr:not(:nth-child(2)) {
+        width: 100%;
+    }
+
+    #navigation #humberger:hover hr:nth-child(2) {
+        width: 60%;
+    }
+}

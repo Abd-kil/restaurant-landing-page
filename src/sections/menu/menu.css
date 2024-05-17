@@ -1,0 +1,99 @@
+@import url("../../index.css");
+#menu , .special-menu{
+    background: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 55px;
+}
+
+#menu .text-container {
+    min-width: 200px;
+    max-width: 300px;
+    padding: 0 10px;
+    text-align: center;
+    margin: 0 auto 30px;
+}
+
+#menu .categories-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 10px;
+}
+
+@media (min-width:720px) {
+    #menu .categories-container .category:not(:nth-child(2)) {
+        transform: translateY(-100px);
+    }
+}
+
+
+#open-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    inset-inline-start: 0;
+    inset-inline-end: 0;
+    border-start-end-radius: 0;
+    background: radial-gradient(circle at 0% 100%, #222 0%,var(--background-color) 150%);
+    z-index: 5;
+    transition: border-radius 0.8s, bottom 0.3s, inset-inline-end 0.3s;
+}
+
+#close-menu {
+    position: fixed;
+    top: 0;
+    bottom: 100%;
+    inset-inline-start: 0;
+    inset-inline-end: 100%;
+    border-end-end-radius: 100%;
+    background: radial-gradient(circle at 0% 100%, #222 0%, #000 150%);
+    z-index: 5;
+    overflow-y: hidden;
+    transition: border-radius 0.3s, bottom 0.5s, inset-inline-end 0.5s;
+}
+
+#close-menu #closing-button {
+    display: none;
+}
+
+#open-menu #closing-button {
+    position: relative;
+    inset-inline-start: calc(50% - 25px);
+    margin: 20px 0;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: xx-large;
+    transition: 0.2s;
+    color: #fff;
+}
+
+#open-menu #closing-button:hover {
+    background: #444;
+}
+
+.meals-container {
+    display: flex;
+    padding: 0 40px;
+    margin:0 auto;
+    max-width: 900px;
+    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.special-menu h1 {
+    text-align: center;
+}
+
+.special-menu a {
+    border: var(--primary-color) solid;
+    padding: 5px 10px 7px;
+    border-radius: 2px;
+    margin: 30px auto;
+    transition: background-position 0.7s ease, transform ease 1s !important;
+}
